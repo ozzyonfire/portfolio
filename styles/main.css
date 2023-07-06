@@ -1,0 +1,231 @@
+.fire-start {
+	height: 24px;
+	width: 20px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	animation-name: burn-start;
+	animation-timing-function: steps(4);
+	animation-duration: .5s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	transform: scale(10);
+	image-rendering: pixelated;
+	transform-origin: bottom;
+	background: url("/img/sprites/blue/start/burning_start_2.png");
+	z-index: -1;
+}
+
+.fire-loop {
+	/* background: url("/img/sprites/blue/loops/burning_loop_2.png"); */
+	height: 24px;
+	width: 20px;
+	visibility: hidden;
+	background-position: bottom;
+	transform-origin: bottom;
+	animation-name: burn-loop;
+	animation-timing-function: steps(8);
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-iteration-count: infinite;
+	image-rendering: pixelated;
+	background-size: cover;
+	transform: scale(10);
+	background-repeat: no-repeat;
+	z-index: -1;
+	/* animation-fill-mode: forwards; */
+}
+
+.fire-end {
+	background: url("/img/sprites/blue/end/burning_end_2.png");
+	height: 24px;
+	width: 20px;
+	background-position: bottom;
+	transform-origin: bottom;
+	animation-name: burn-end;
+	animation-timing-function: steps(5);
+	animation-duration: .6s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	image-rendering: pixelated;
+	transform: scale(10);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.fire {
+	height: 24px;
+	width: 20px;
+	transform-origin: bottom;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	image-rendering: pixelated;
+	transform: scale(10);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+@keyframes burn-start {
+	from {
+		background-position: 0px;
+		opacity: 1;
+	}
+
+	to {
+		background-position: -80px;
+		opacity: 0;
+	}
+}
+
+@keyframes burn-loop {
+	0% {
+		background: url("/img/sprites/blue/loops/burning_loop_2.png");
+		background-position: 0px;
+		visibility: visible;
+	}
+
+	100% {
+		background: url("/img/sprites/blue/loops/burning_loop_2.png");
+		background-position: -160px;
+		visibility: visible;
+	}
+}
+
+@keyframes burn-end {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: -100px;
+	}
+}
+
+.glow {
+	text-shadow: 0 0 0.5rem #0D54F3,
+		0 0 1rem #0D54F3,
+		0 0 2rem #0D54F3,
+		0 0 4rem #0D54F3,
+		0 0 8rem #0D54F3;
+	/* 0 0 16rem #0D54F3,
+		0 0 32rem #0D54F3; */
+}
+
+.slide-left {
+	animation-name: slide-left, fade-out;
+	animation-duration: 2s;
+	animation-delay: 0s, 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.slide-right {
+	animation-name: slide-right, fade-out;
+	animation-duration: 2s;
+	animation-delay: 0s, 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.slide-down {
+	animation-name: slide-down, fade-out;
+	animation-duration: 2s;
+	animation-delay: 0s, 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.slide-up {
+	animation-name: slide-up;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.fade-in {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-right {
+	from {
+		transform: translateX(-1000px);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-down {
+	from {
+		transform: translateY(-1000px);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-up {
+	from {
+		transform: translateY(1000px);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-left {
+	from {
+		transform: translateX(1000px);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+/* .fire {
+	transition: all .5s ease-in-out;
+}
+
+.heading:hover .fire {
+	background-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+} */
