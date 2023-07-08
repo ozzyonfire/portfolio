@@ -159,7 +159,7 @@ export default function Main() {
 					md: 'left'
 				}}
 			>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis. Egestas sed tempus urna et pharetra. Ac tortor vitae purus faucibus ornare.
+				Matt Oskamp is an innovative full-stack developer with a passion for creative projects and a knack for solving complex business needs. When he&apos;s not coding, you can find him playing beach volleyball, exploring Canadian golf courses or making hard-cider.
 			</Text>
 			{/* <Card /> */}
 			<Stack spacing={1.5} pt={4} w={300}>
