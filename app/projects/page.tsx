@@ -2,7 +2,7 @@
 
 import Card from "@/components/card";
 import MenuButton from "@/components/menuButton";
-import { Box, Container, Divider, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import projects from './data.json';
 
 export default function ProjectsPage() {

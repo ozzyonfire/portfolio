@@ -5,7 +5,6 @@ import { ChevronsRight, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Card(props: {
 	children: React.ReactNode
 	title: string

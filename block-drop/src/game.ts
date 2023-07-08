@@ -1,3 +1,5 @@
+'use client';
+
 import Player from './player';
 import Polyomino from './polyomino';
 import Board from './board';

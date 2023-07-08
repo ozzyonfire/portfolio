@@ -21,3 +21,10 @@ export default function ProjectPage(props: {
 		/>
 	)
 }
+
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+	return projects.map((project) => ({
+		slug: project.slug,
+	}))
+}
