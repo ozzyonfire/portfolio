@@ -5,16 +5,21 @@ import Link from "next/link"
 interface MenuButtonProps extends ButtonProps {
 	children: React.ReactNode
 	href: string
+	variant?: 'link' | 'a'
+	download?: string
+	target?: string
 }
 
 export default function MenuButton(props: MenuButtonProps) {
-	const { children, href, ...rest } = props
+	const { variant = 'link', children, href, ...rest } = props
 
 	return (
 		<Button
 			rounded="none"
-			as={Link}
+			as={variant === 'link' ? Link : 'a'}
 			href={props.href}
+			target={props.target}
+			download={props.download}
 			sx={{
 				overflow: 'hidden',
 				border: '1px solid #CBDAFC',

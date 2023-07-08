@@ -229,3 +229,9 @@
 	-webkit-text-fill-color: transparent;
 	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 } */
+
+.block-drop-container {
+	position: absolute;
+	margin: 0 auto;
+	padding: 16px;
+}

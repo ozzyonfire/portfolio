@@ -4,6 +4,7 @@ import { Providers } from './providers'
 import '@/styles/main.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import GameWrapper from './gameWrapper'
 
 export const metadata = {
   title: 'ozzyonfire - portfolio',
@@ -20,10 +21,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <MainContainer>
-            <Header />
-            {children}
-            <div style={{ flexGrow: 1 }}></div>
-            <Footer />
+            <GameWrapper>
+              {children}
+            </GameWrapper>
           </MainContainer>
         </Providers>
       </body>

@@ -2,6 +2,7 @@
 
 import MenuButton from "@/components/menuButton";
 import { Box, Center, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export default function Main() {
@@ -115,7 +116,7 @@ export default function Main() {
 	}
 
 	return (
-		<Stack spacing={0} alignItems="center">
+		<Stack spacing={0} alignItems="center" pt={24}>
 			<Center position="relative">
 				{/* <Box
 						position="absolute"
@@ -162,15 +163,17 @@ export default function Main() {
 			</Text>
 			{/* <Card /> */}
 			<Stack spacing={1.5} pt={4} w={300}>
-				<MenuButton
+				{/* <MenuButton
 					href="/about"
 				>
 					About
-				</MenuButton>
+				</MenuButton> */}
 				<MenuButton
-					href="/resume"
+					href="https://docs.google.com/document/d/1xKkQIbwG2Dx7iQyPPWsi3tUHldsBqbg2_Nto5sk5nNs/edit?usp=sharing"
+					target="_blank"
+					rightIcon={<ExternalLink size={15} />}
 				>
-					Resume
+					Resumé
 				</MenuButton>
 				<MenuButton
 					href="/projects"
@@ -178,7 +181,7 @@ export default function Main() {
 					Projects
 				</MenuButton>
 				<MenuButton
-					href="/contact"
+					href="mailto:mattoskamp@gmail.com"
 				>
 					Contact
 				</MenuButton>

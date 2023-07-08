@@ -1,0 +1,49 @@
+[
+	{
+		"title": "The Preferred Lie",
+		"shortDescription": "Rank and review golf courses you've played. Discover new courses to play.",
+		"longDescription": "TPL is focused on helping golfers find new courses to play and share their experiences with other golfers. Users can search for courses by name, location, or by using the map. Once a course is found, users can view the course's details, reviews, and photos. Users can also rank courses they've played or add courses to lists to dive deeper into their golf journey.",
+		"image": "/img/projects/tpl.png",
+		"link": "https://app.preferredlie.com/",
+		"stack": "This project was built on a Node JS backend using Express as the REST API and MongoDB as the database. The front-end is developed using React and the NextJS framework.",
+		"slug": "the-preferred-lie"
+	},
+	{
+		"title": "MealBot",
+		"shortDescription": "A bot that helps you find recipes and plan meals based on the items in your fridge.",
+		"longDescription": "MealBot is a proof-of-concept bot that helps you find recipes and plan meals based on the items in your fridge. Users can add items to their fridge, search for recipes, and plan meals for the week.",
+		"image": "/img/projects/mealbot.png",
+		"link": "https://meal-bot.vercel.app/",
+		"stack": "This project was built on NextJS App Router and uses Server Components. The database is managed using Prisma and PostgreSQL (hosted on Supabase) with authentication provided by NextAuth. The bot is built on ChatGPT 3.5 and features streaming to the client for a more snappy experience.",
+		"slug": "mealbot"
+	},
+	{
+		"title": "Order's Up! CSV Order Uploader",
+		"shortDescription": "A tool to help Shopify customers upload orders from any source using a CSV file.",
+		"longDescription": "Order's Up! is a tool that helps Shopify customers upload orders from any source using a CSV file. Users can upload a CSV file and map the columns to the appropriate fields in Shopify. Once the file is uploaded, the user can review the orders and make any necessary changes before uploading to Shopify.",
+		"image": "/img/projects/orders-up.png",
+		"link": "https://apps.shopify.com/csv-order-upload/",
+		"stack": "Fully built and deployed using NextJS and Vercel. The app uses the Shopify App Bridge to connect to the Shopify API and the Shopify Polaris component library for the UI. Authentication is handled using the Shopify OAuth flow.",
+		"slug": "orders-up"
+	},
+	{
+		"title": "Doodle Diffusion",
+		"shortDescription": "A web-app that allows users to create and share a doodle based on a daily prompt.",
+		"longDescription": "Doodle Diffusion is a web-app that allows users to create and share a doodle based on a daily prompt. Users are provided a prompt and a canvas to create their doodle. Once the doodle is complete, users can generate an AI generated rendering of their drawing and share it with their friends.",
+		"image": "/img/projects/doodle-diffusion.png",
+		"link": "https://doodle-diffusion.vercel.app/",
+		"stack": "This project was built using NextJS and Vercel. The AI rendering uses ControlNet and Stable Diffusion hosted on Replicate. The frontend is composed with TailwindCSS.",
+		"repo": "https://github.com/ozzyonfire/doodle-diffusion",
+		"slug": "doodle-diffusion"
+	},
+	{
+		"title": "Unity Platformer",
+		"shortDescription": "A very simple 2D platformer game built in 24 hours using Unity.",
+		"longDescription": "I used to do a lot of work in Unity and wanted to get back into it. I decided to build a very simple 2D platformer game in 24 hours. The game features a player that can move left and right, jump, and dash. The player can also collect coins. What is your best time?",
+		"image": "/img/projects/unity-platformer.png",
+		"link": "https://platformer-webpage.vercel.app/",
+		"stack": "This project was built using Unity and C#.",
+		"repo": "https://github.com/ozzyonfire/platformer",
+		"slug": "unity-platformer"
+	}
+]
